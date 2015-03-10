@@ -1,0 +1,108 @@
+/* ====== */
+/* Basics */
+/* ====== */
+
+h1 {
+	font-size: 5em;
+	font-family: 'Roboto Slab', serif;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0;
+}
+
+p {
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 25px;
+	position: relative;
+}
+
+.first, .third {
+	background-color: #FFFFEA;
+	text-align: left;
+}
+
+.second {
+	background-color: #FFF;
+	text-align: right;
+}
+
+/* ============ */
+/* Hero Section */
+/* ============ */
+
+/* Background and Layout */
+.hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/taxi.gif);
+	background-size: cover;
+
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	color: white;
+}
+
+/* Bouncing Down Arrow */
+.down-arrow {
+	font-size: 3.5em;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -18px;
+	color: white;
+	text-decoration: none;
+
+	animation-name: bounce;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+}
+
+/* Keyframes for animation */
+@keyframes bounce { 
+    0% { 
+    	transform: translateY(0); 
+   	} 
+    50% { 
+    	transform: translateY(-30px); 
+    } 
+    100% { 
+    	transform: translateY(0px); 
+    } 
+}
+
+@-webkit-keyframes bounce { 
+    0% { 
+    	-webkit-transform: translateY(0); 
+   	} 
+    50% { 
+    	-webkit-transform: translateY(-30px); 
+    } 
+    100% { 
+    	-webkit-transform: translateY(0px); 
+    }
+}

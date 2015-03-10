@@ -1,0 +1,45 @@
+/* ====== */
+/* Basics */
+/* ====== */
+
+h1 {
+	font-size: 5em;
+	font-family: 'Roboto Slab', serif;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0;
+}
+
+p {
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 25px;
+	position: relative;
+}
+
+.first, .third {
+	background-color: #FFFFEA;
+	text-align: left;
+}
+
+.second {
+	background-color: #FFF;
+	text-align: right;
+}
+
+/* ============ */
+/* Hero Section */
+/* ============ */
