@@ -25,17 +25,16 @@ p {
 	margin: 0 auto;
 }
 
-.section {
+.odd, .even {
 	padding: 25px;
-	position: relative;
 }
 
-.first, .third {
+.odd {
 	background-color: #FFFFEA;
 	text-align: left;
 }
 
-.second {
+.even {
 	background-color: #FFF;
 	text-align: right;
 }
@@ -48,38 +47,36 @@ p {
 .hero {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/taxi.gif);
 	background-size: cover;
-
 	height: 100vh;
+
+	color: white;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	text-align: center;
-	color: white;
 }
 
 /* Bouncing Down Arrow */
 .down-arrow {
 	font-size: 3.5em;
+	color: white;
+	text-decoration: none;
+	
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
 	margin-left: -18px;
-	color: white;
-	text-decoration: none;
 
 	animation-name: bounce;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease;
-	animation-fill-mode: both;
 
 	-webkit-animation-name: bounce;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: ease;
-	-webkit-animation-fill-mode: both;
 }
 
 /* Keyframes for animation */

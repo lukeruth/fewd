@@ -25,17 +25,16 @@ p {
 	margin: 0 auto;
 }
 
-.section {
+.odd, .even {
 	padding: 25px;
-	position: relative;
 }
 
-.first, .third {
+.odd {
 	background-color: #FFFFEA;
 	text-align: left;
 }
 
-.second {
+.even {
 	background-color: #FFF;
 	text-align: right;
 }
